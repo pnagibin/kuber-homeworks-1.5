@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multitool-pod
+  labels:
+    app: multitool-pod
+spec:
+  containers:
+  - name: multitool-pod
+    image: praqma/network-multitool
+    ports:
+    - containerPort: 80
